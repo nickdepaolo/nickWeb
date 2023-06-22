@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/nickWeb/static/css/main.073c9b0a.css",
-    "main.js": "/nickWeb/static/js/main.f3b5cab7.js",
+    "main.css": "/nickWeb/static/css/main.23f52f9e.css",
+    "main.js": "/nickWeb/static/js/main.80c5488c.js",
     "static/js/787.3ba22122.chunk.js": "/nickWeb/static/js/787.3ba22122.chunk.js",
-    "static/media/logo.svg": "/nickWeb/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/passiondale.jpeg": "/nickWeb/static/media/passiondale.3fb780c17598de672bad.jpeg",
+    "static/media/triangles-fractal.gif": "/nickWeb/static/media/triangles-fractal.f09b720ac97363e37902.gif",
+    "static/media/resize.svg": "/nickWeb/static/media/resize.5d7d652368ec469b1e369ac5235fbede.svg",
+    "static/media/reach.jpeg": "/nickWeb/static/media/reach.4f3625f4da06fd4fdc8a.jpeg",
+    "static/media/depaolo.svg": "/nickWeb/static/media/depaolo.f5323f803ad341276c6c0b873b0f324e.svg",
     "index.html": "/nickWeb/index.html",
-    "main.073c9b0a.css.map": "/nickWeb/static/css/main.073c9b0a.css.map",
-    "main.f3b5cab7.js.map": "/nickWeb/static/js/main.f3b5cab7.js.map",
+    "main.23f52f9e.css.map": "/nickWeb/static/css/main.23f52f9e.css.map",
+    "main.80c5488c.js.map": "/nickWeb/static/js/main.80c5488c.js.map",
     "787.3ba22122.chunk.js.map": "/nickWeb/static/js/787.3ba22122.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f3b5cab7.js"
+    "static/css/main.23f52f9e.css",
+    "static/js/main.80c5488c.js"
   ]
 }
