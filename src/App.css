@@ -1,38 +1,236 @@
+html, body { 
+  
+  @media screen and (min-width:500px) {
+    background-image: url('./Assets/passiondale.jpeg');
+    min-height: 100%;
+    min-width:500px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left:0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+  @media screen and (max-width:499px) {
+    background-image: url('./Assets/reach.jpeg');
+    max-height: 100%;
+    max-width: 499px;
+    width: 100%;
+    height: 100%;
+    background-position: center 14vh;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* #main{
+ 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#header {
+  margin: 0;
+  padding: 1em;
+  top:0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: bisque;
   display: flex;
   flex-direction: column;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.5);
+}
+
+#toggledDesk {
+  height: 50vh;
+  width: 40vh;
+  background-color: rgba(151, 151, 151, 0.75);
+  position: absolute;
+  color: black;
+  animation: fadeIn .5s;
+  top: 10em;
+  border-radius: 10px;
+}
+
+#toggledMobile {
+  height: 50vh;
+  width: 50vw;
+  background-color: rgba(151, 151, 151, 0.75);
+  position: absolute;
+  color: black;
+  animation: fadeIn .5s;
+  top: 10em;
+}
+
+@keyframes filterChange {
+  0% {filter: invert(0); transform: scale(1.2); opacity: 0; border-width: 0px;}
+  30% {filter: invert(.5);}
+  50% {filter: invert(.5); opacity: .4;}
+  70% {transform: scale(.5); opacity: .4; top: 7vh;}
+  100% {filter: invert(1) scale(.5);}
+
+}
+
+@keyframes slowChange {
+  0% {filter: opacity(0) grayscale(1) brightness(350%);}
+  100% {filter: opacity(1) grayscale(1) brightness(350%);}
+}
+
+@keyframes fadeIn {
+  0% {filter: opacity(0);}
+  100% {filter: opacity(.3);}
+}
+
+@keyframes midGifLeft {
+  0% {transform: rotateX(0deg) rotateY(180deg); opacity: 1;}
+ 
+  40% {opacity: 1;}
+  50% {transform: rotateX(180deg);}
+  60% {opacity: 1;}
+
+  100% {transform: rotateX(0deg) rotateY(0deg); opacity: 1;}
+}
+
+@keyframes midGifRight {
+  0% {transform: rotateX(0deg) rotateY(0deg); opacity: 1;}
+ 
+  40% {opacity: 1;}
+  50% {transform: rotateX(-180deg);}
+  60% {opacity: 1;}
+ 
+  100% {transform: rotateX(0deg) rotateY(180deg); opacity: 1;}
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0) 40%),
+  linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0) 60%),
+  linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0) 90%),
+  linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0) 100%);
+  color: beige;
+}
+
+#sunsetDiv {
+  transform: scale(.5);
+  filter: invert(1);
+  opacity: .4;
+  animation-name: filterChange; 
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  position: absolute;
+  top: -4vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#dePaoloDiv {
+  width: 90vw;
+  position: absolute;
+  top: 60vh;
+  filter: grayscale(1) brightness(350%);
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  animation-name: slowChange;
+  animation-duration: 5s;
+}
+
+#dePaoloImg {
+  width: 90vw;
+}
+
+#gifBox {
+  position: absolute;
+  top: 37vh;
+  margin-left: 0;
+  margin-right: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#gifFlex {
+  filter: opacity(.3);
+  animation-name: fadeIn;
+  animation-duration: 7s;
+  display: flex;
+  flex-direction: row;
+
+}
+
+#gifFlex2 {
+  filter: opacity(.3);
+  animation-name: fadeIn;
+  animation-duration: 7s;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1vh;
+  transform: rotate(180deg);
+  
+}
+
+#midGifLeft {
+  margin-left: ;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: left;
+  animation-name: midGifLeft;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+#rightGifDiv {
+  transform: scaleX(-1);
+}
+
+#midGifRight {
+  margin-left: auto;
+  margin-right: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  animation-name: midGifRight;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  transform: scaleX(-1);
+}
+
+.flex{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flexLeft{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-grow: 1;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flexRight{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
+
+
+
